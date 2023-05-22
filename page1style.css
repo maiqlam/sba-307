@@ -232,7 +232,8 @@ ul {
     display: block;
     margin-left: 50%;
     transform:translateX(-50%);
-
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .wrapper_column {
