@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="/page2style.css">
 
+    <!-- -------------------------- -->
+    
+
 </head>
 <body>
     <!-- fixed sidebar -->
@@ -63,12 +66,12 @@
                     <tr>
                       <th></th>
                       <th>General Admission</th>
-                      <th>VIP (Very Important Pup)</th>
+                      <th>VIP <br>(Very Important Pup)</th>
                     </tr>
                     <tr>
                       <td>Price</td>
-                      <td>$1,000 US Doll Hairs</td>
-                      <td>$1,500 US Doll Hairs</td>
+                      <td>1,000 Milk Bones</td>
+                      <td>1,500 Milk Bones</td>
                     </tr>
                     <tr>
                       <td>Includes:</td>
@@ -78,7 +81,23 @@
                   </table>             
             </div>
             <div class="ticket_buy">
+                <form action="#">
 
+                    <label>First Name</label>
+                    <input type="text" name="firstname" placeholder="Cheddaroni">
+                    <label>Last Name</label>
+                    <input type="text" name="lastname" placeholder="Lam">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="cheddar@milkbone.com">
+                
+                    <label>Select ticket type:</label>
+                    <select id="ticket_type">
+                        <option value="GA">General Admission</option>
+                        <option value="VIP">VIP [Very Important Pup]</option>
+                
+                    <input type="submit" value="Proceed to Payment">
+                
+                    </form>
             </div>
             <div class="ticket_vip">
 
