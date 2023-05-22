@@ -110,17 +110,6 @@ text-align: center;
     src: url("/Chewy-Regular.ttf") format("truetype");
   }
 
-  /* @media (max-width: 500px) {
-  .wrapper {
-    flex-direction: column-reverse;
-  }
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-} */
 @media screen and (min-width: 800px){
 .mobile_nav {
     display: none;
@@ -136,21 +125,14 @@ text-align: center;
   body {
     background-color: #bcdbdf;
     color: #235784;
-    /* overflow: hidden; */
-    /* height: 100vh; */
-    /* padding: 2rem; */
     margin: 0;
     display: flex;
-    /* justify-content: flex-start; */
-    /* flex-flow: row wrap; */
   }
 
 .main {
     display: flex;
     flex-direction: column;
     width: 70%;
-    /* min-width: 800px; */
-    /* align-content: center; */
   }
 
 .header {
@@ -160,9 +142,6 @@ text-align: center;
     align-items: center;
     margin: 0;
     margin-top: 1rem;
-    /* width: auto;
-    height: 120px; */
-    /* align-items: center; */
     padding: 12px;
     letter-spacing: 2px;
     color: #da9d1c;
@@ -186,13 +165,8 @@ text-align: center;
     width: 90px;
     border-radius: 50%;
     border: 2px solid rgba(226, 226, 102, 0.952);
-    /* padding: 5px; */
-    /* vertical-align: middle; */
   }
 
-  /* .wrapper_inner {
-    overflow-y: auto;
-  } */
 
 ul {
     padding-left: 0;
@@ -213,8 +187,6 @@ ul {
 
 
 .wrapper_column {
-    /* display: block;
-    float: left; */
     position: sticky;
     top: 10%;
     height: 100%;
@@ -245,69 +217,61 @@ ul {
     color: #f7aa00;
   }
 
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; /* keeps padding and width in place */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
 
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
+  input[type=submit] {
     background-color: #40a8c4;
     border: 5px solid #f7b321ce;
-    border-radius: 6px;
-    outline: none;
-    transition: 0.3s;
-    font-family: Chewy;
-    color: #235784;
-    text-shadow: 0px 0px 8px white;
-    font-size: 35px;
-    font-variant: small-caps;
-  }
-  .button:hover {
-    background-color: #40a8c48e;
-  }
-
-  /* --------------------------------------------- */
-
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    font-family: Chewy;
+    color: #235784;
+    text-shadow: 0px 0px 3px white;
+    font-size: 20px;
+    float: right;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #40a8c48e;
   }
   
-  /* Add a background color and some padding around the form */
-  .contact_form {
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    }
+    
+
+    
+.contact_form {
     border-radius: 5px;
     padding: 20px;
-    max-width: 70%;
+    width: 450px;
   }
 
-  .content {
-    margin: auto;
-    justify-self: center;
-    }
-    
-    .contact {
-    
-    }
+
+  .contact_support {
+    align-self: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .contact_support>img {
+    max-height: 400px;
+    border-radius: 20px;
+  }

@@ -110,17 +110,6 @@ text-align: center;
     src: url("/Chewy-Regular.ttf") format("truetype");
   }
 
-  /* @media (max-width: 500px) {
-  .wrapper {
-    flex-direction: column-reverse;
-  }
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-} */
 @media screen and (min-width: 800px){
 .mobile_nav {
     display: none;
@@ -136,21 +125,14 @@ text-align: center;
   body {
     background-color: #bcdbdf;
     color: #235784;
-    /* overflow: hidden; */
-    /* height: 100vh; */
-    /* padding: 2rem; */
     margin: 0;
     display: flex;
-    /* justify-content: flex-start; */
-    /* flex-flow: row wrap; */
   }
 
 .main {
     display: flex;
     flex-direction: column;
     width: 70%;
-    /* min-width: 800px; */
-    /* align-content: center; */
   }
 
 .header {
@@ -160,9 +142,6 @@ text-align: center;
     align-items: center;
     margin: 0;
     margin-top: 1rem;
-    /* width: auto;
-    height: 120px; */
-    /* align-items: center; */
     padding: 12px;
     letter-spacing: 2px;
     color: #da9d1c;
@@ -186,13 +165,8 @@ text-align: center;
     width: 90px;
     border-radius: 50%;
     border: 2px solid rgba(226, 226, 102, 0.952);
-    /* padding: 5px; */
-    /* vertical-align: middle; */
   }
 
-  /* .wrapper_inner {
-    overflow-y: auto;
-  } */
 
 ul {
     padding-left: 0;
@@ -208,36 +182,11 @@ ul {
 
   li>a{color: #235784;}
 
-.content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 2rem;
-}
 
-.content_whatis {
-    width: 45%;
-    padding: 1rem 3rem 1rem 1rem;
-    align-self: center;
-    font-size: 22px;
-  }
 
-.content_pic1 {
-    float: right;
-    width: 45%;
-    align-self: center;
-}
 
-.content_offers {
-    display: block;
-    margin-left: 50%;
-    transform:translateX(-50%);
-
-}
 
 .wrapper_column {
-    /* display: block;
-    float: left; */
     position: sticky;
     top: 10%;
     height: 100%;
@@ -269,23 +218,30 @@ ul {
   }
 
 
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #40a8c4;
-    border: 5px solid #f7b321ce;
-    border-radius: 6px;
-    outline: none;
-    transition: 0.3s;
-    font-family: Chewy;
-    color: #235784;
-    text-shadow: 0px 0px 8px white;
-    font-size: 35px;
-    font-variant: small-caps;
+  /* ------------------------------------ */
+
+.content {
+/* margin: 1rem;
+width: 95%;
+overflow: hidden; */
+}
+.ticket_info {
+display: block;
+width: 90%;
+padding-top: 1rem;
+}
+  #pricing {
+	border-collapse: collapse;
+	width: 100%;
   }
-  .button:hover {
-    background-color: #40a8c48e;
+  
+  #pricing td, #pricing th {
+	border: 3px solid;
+	padding: 8px;
+  }
+  
+  #pricing th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
   }
