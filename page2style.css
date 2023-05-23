@@ -312,4 +312,18 @@ label {
     transform: scale(1.2);
     transition: 1s ease;
   }
-  
+ .outfits {
+
+ }
+ .outfits img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .outfits img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
